@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     tools:context="com.example.root.to_do_list.AddTitleActivity">
+    tools:context="com.example.root.to_do_list.AddTitleActivity">
 
 
     <EditText
@@ -13,14 +13,14 @@
         android:hint="TITLE"
         android:textColor="#FF69B4"
         android:id="@+id/addtitle"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:maxLines="1"
         android:singleLine="true"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="75dp" />
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -30,28 +30,28 @@
         android:hint="DESCRIPTION"
         android:singleLine="true"
         android:id="@+id/adddescription"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:maxLines="1"
         android:textAlignment="center"
         android:layout_below="@+id/addtitle"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_centerHorizontal="true" />
     <EditText
-        android:layout_width="245dp"
+        android:layout_width="450dp"
         android:layout_height="wrap_content"
         android:textColor="#FF69B4"
         android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:hint="DATE"
         android:id="@+id/adddate"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:maxLines="1"
         android:textAlignment="center"
         android:layout_below="@+id/addtitle"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="80dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_centerHorizontal="true" />
@@ -61,7 +61,7 @@
         android:id="@+id/dateButton"
         android:layout_toRightOf="@+id/adddate"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="140dp"
         android:layout_marginRight="20dp"
         android:src="@mipmap/ic_calendar_icon"/>
 
@@ -73,5 +73,5 @@
         android:id="@+id/savebutton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="88dp" />
+        android:layout_marginBottom="30dp" />
 </RelativeLayout>
