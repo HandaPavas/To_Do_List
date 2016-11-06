@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class AddTitleActivity extends AppCompatActivity {
@@ -74,7 +76,7 @@ public class AddTitleActivity extends AppCompatActivity {
                     returnIntent.putExtra("description", description);*/
                     MainActivity.data.add(new Title(title,description,date));
                     Toast.makeText(getApplicationContext(), "Data Saved !!", Toast.LENGTH_SHORT).show();
-                   // setResult(Activity.RESULT_OK, returnIntent);
+                    // setResult(Activity.RESULT_OK, returnIntent);
                     finish();
                 }
 
@@ -90,8 +92,15 @@ public class AddTitleActivity extends AppCompatActivity {
     @Override
     protected Dialog onCreateDialog(int id){
 
-        if(id==DIALOG_ID)
-            return new DatePickerDialog(this,dpickerListener,year_x,month_x,day_x);
+        if(id==DIALOG_ID) {
+            final Calendar c = Calendar.getInstance();
+            year_x = c.get(Calendar.YEAR);
+            month_x = c.get(Calendar.MONTH);
+            day_x = c.get(Calendar.DAY_OF_MONTH);
+            return new DatePickerDialog(this, dpickerListener, year_x, month_x, day_x);
+
+
+        }
         return null;
 
     }

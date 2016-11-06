@@ -5,13 +5,14 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class DisplayDetailActivity extends FragmentActivity {
+public class DisplayDetailActivity extends AppCompatActivity {
     ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_detail);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
        // Bundle extras = getIntent().getBundleExtra("Bundle_Extras");
 
 

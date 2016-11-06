@@ -29,7 +29,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".AddTitleActivity" />
-        <activity android:name=".DisplayDetailActivity"></activity>
+        <activity android:name=".DisplayDetailActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
