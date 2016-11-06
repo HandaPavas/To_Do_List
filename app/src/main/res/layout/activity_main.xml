@@ -12,4 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </android.support.v7.widget.RecyclerView>
+
+<ImageButton
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:id="@+id/imageButton"
+    android:background="@drawable/oval"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="35dp"
+    android:layout_marginRight="25dp"
+    android:src="@mipmap/ic_add_white_24dp"/>
 </RelativeLayout>
