@@ -44,7 +44,7 @@ public class AddTitleActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //Toast.makeText(getApplicationContext(),"Date Picker",Toast.LENGTH_SHORT).show();
+
                 showDialog(DIALOG_ID);
 
             }
@@ -70,18 +70,15 @@ public class AddTitleActivity extends AppCompatActivity {
                     String date= datetext.getText().toString();
                     String description=descriptortext.getText().toString();
                     String title= titletext.getText().toString();
-                    /*Intent returnIntent = new Intent();
-                    returnIntent.putExtra("title", title);
-                    returnIntent.putExtra("date", date);
-                    returnIntent.putExtra("description", description);*/
+
                     MainActivity.data.add(new Title(title,description,date));
-                    Toast.makeText(getApplicationContext(), "Data Saved !!", Toast.LENGTH_SHORT).show();
-                    // setResult(Activity.RESULT_OK, returnIntent);
+                    Toast.makeText(getApplicationContext(), "Details Saved !!", Toast.LENGTH_SHORT).show();
+
                     finish();
                 }
 
 
-                // Toast.makeText(getApplicationContext(),"Date Saved",Toast.LENGTH_SHORT).show();
+
 
 
             }
