@@ -47,6 +47,7 @@
         android:hint="DATE"
         android:id="@+id/adddate"
         android:textSize="30dp"
+        android:editable="false"
         android:maxLines="1"
         android:textAlignment="center"
         android:layout_below="@+id/addtitle"
