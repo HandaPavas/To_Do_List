@@ -9,7 +9,7 @@ import android.view.WindowManager;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static final int SPLASH_SHOW_TIME = 4000;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class SplashScreen extends AppCompatActivity {
         @Override
         protected Void doInBackground(Void... arg0) {
             try {
-                Thread.sleep(SPLASH_SHOW_TIME);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } return null;
@@ -39,8 +39,8 @@ public class SplashScreen extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-            Intent i = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(i);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
             finish();
         }
 
